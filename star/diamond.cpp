@@ -4,36 +4,31 @@ using namespace std;
 int main()
 {
 
-int i,j,k,x;
-i = j = k = x = 1 ;
+int i,j,k,rows,n;
+i = j = k = rows = 0 ;
+
+cout<<"enter the hight for diamond: "<<endl;
+cin>> rows;
+n = ( rows +1) /2;
+for( i =1 ;i <= rows ; i++)
+{
+  if(rows%2==0)
+  {
+    if(i<= n) k++;
+    if(i> n +1) k--;
+  }
+else i<=n?k++:k--;
+for(j = 1; j <= rows ;j++)
+{
+    if(j >= n+1 -k && j <= n -1 + k)
+        cout<<"*";
+    else
+        cout<<" ";
+}
+cout<<endl;
+}
 
 
-cout<<"enter the number for triangle: "<<endl;
-cin>> x;
 
-for(i = 1; i <= x ; ++i)
-     {
-        k = 1 ;
-        for(j = 1 ; j <= x + i - 1 ; ++j)
-        {
-            if(j >= (x - i + 1) && j <=(x + i -1) && k)
-               {cout<<"*"; k = 0;}
-            else
-            {cout<<" "; k = 1;}
-        }
-    cout<<endl;
-     }
 
-for(i = 1; i <= x ; ++i)
-     {
-        k = 1 ;
-        for(j = 1 ; j <= ((x*2) - (i*2) + i) ; ++j)
-        {
-            if(j >=  i && j <=((x*2) - (i*2) + i) && k)
-               {cout<<"*"; k = 0;}
-            else
-            {cout<<" "; k = 1;}
-        }
-    cout<<endl;
-     }
 }
