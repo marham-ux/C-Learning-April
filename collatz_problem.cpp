@@ -18,11 +18,11 @@ using namespace std;
 
 if(num % 2 == 0)
 {
-    return collatz(num / 2,counter + 1,maxVal) ;
+collatz(num / 2,counter + 1,maxVal) ;
 }
 else
 {
-    return  collatz(num *3+1,counter + 1,maxVal);
+ collatz(num *3+1,counter + 1,maxVal);
     
 }
 }
