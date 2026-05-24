@@ -14,7 +14,7 @@ vector<vector<int>> generate(int numRows)
 
         vector<int> triangle(i + 1, 1);
 
-        for (int j = 1 < j < i; j++)
+        for (int j = 1; j < i; j++)
             triangle = generate[i - 1][j - 1] + generate[i - 1][j];
 
         generate.push_back(triangle);
