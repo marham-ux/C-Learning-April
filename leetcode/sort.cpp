@@ -14,7 +14,7 @@ int main()
     for (int l = 0; l < 10; l++)
     {
 
-        cout << "enter number";
+        cout << "enter number" << endl;
         cin >> arr[l];
     }
 
@@ -44,6 +44,6 @@ int main()
     for (int p = 0; p < 10; p++)
     {
 
-        cout << arr[p];
+        cout << arr[p] << endl;
     }
 }
