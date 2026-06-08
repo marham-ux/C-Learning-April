@@ -2,6 +2,10 @@
 
 using namespace std;
 
+class log
+{
+};
+
 struct Student
 {
     string name;
@@ -11,6 +15,7 @@ struct Student
 };
 int main()
 {
+
     Student students[4] = {
         {"Alice", 20},
         {"Bob", 22, 3.2},
